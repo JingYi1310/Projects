@@ -4,12 +4,27 @@
     - Build an interactive and engaging platform for students to practice as well as improve their additional math abilities. 
     - Provide teachers the ability to efficiently develop, organize, grade quizzes and display the results for the students to revise mistakes. 
     - Provide administrators with tools for effective monitoring and managing account utilization along with performance.
+
+    -Database Setup:
+      🔹 Insert Database
+          1. Go to http://localhost/phpmyadmin/index.php
+          2. Create a new database named rwdd_assignment
+          3. Select utf8mb4_general_ci as the collation and click Create
+          4. Click Import and select the file named rwdd_assignment.sql
+      
     
   # Green Coin Website
     - Develop a web-based platform to encourage e-waste recycling by rewarding users with points.
     - Built secure user authentication features, including registration, login, and session handling.
     - Develop an interactive user dashboard to monitor points accumulation, view recycling history, and access available rewards.
     - Design and implemented an admin panel to oversee user management, review recycling submissions, and update reward offerings.
+
+    -Database Setup:
+      🔹 Insert Database
+          1. Go to http://localhost/phpmyadmin/index.php
+          2. Create a new database named cp_assignment
+          3. Select utf8mb4_general_ci as the collation and click Create
+          4. Click Import and select the file named cp_assignment.sql
     
     - To ensure this website can implement:
       🔹 Step 1: Create a New Project in Google Cloud
