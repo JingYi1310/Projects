@@ -91,3 +91,22 @@
             -User-Profile.php
               1. Replace the keen-diode JSON file path on line 9.
               2. Replace the folder ID on line 15.
+
+    #Simple File Management System
+      - Features:
+        1. Create a note with a title and content.
+        2. View a list of all notes. 
+        3. Update an existing note. 
+        4. Delete a note.
+
+      - Tech Stack:
+        1. Frontend: Vue.js
+        2. Backend: PHP
+        3. Database: MySQL
+
+      - Database Setup:
+      🔹 Insert Database
+          1. Go to http://localhost/phpmyadmin/index.php
+          2. Create a new database named simple_note
+          3. Select utf8mb4_0900_ai_ci as the collation and click Create
+          4. Click Import and select the file named simple_note.sql
