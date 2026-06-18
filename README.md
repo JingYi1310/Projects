@@ -110,3 +110,113 @@
           2. Create a new database named simple_note
           3. Select utf8mb4_0900_ai_ci as the collation and click Create
           4. Click Import and select the file named simple_note.sql
+
+
+# Assessment Feedback System
+    Project Overview
+    The Assessment Feedback System (AFS) is designed to streamline the management of assessment activities and feedback processes within an academic environment. The system supports multiple user roles, including administrative staff, academic leaders, lecturers, and students, each with specific access rights and responsibilities.
+    
+    Through its role-based structure, the AFS facilitates the efficient management of modules, classes, assessments, grading, and feedback. Additionally, academic leaders can generate and analyze performance reports, enabling improved monitoring, evaluation, and data-driven decision-making to enhance the overall academic process.
+    
+    Project Structure
+    The project is organized as follows:
+    
+    Root Directory
+    All data in the text files is separated using a semicolon (;).
+    
+    - Assessment.txt
+      Contains data related to assessments, including:  
+      - Assessment ID (e.g., A001)  
+      - Title of the assessment  
+      - Type of the assessment (Quiz, Midterm, Assignment, Final Exam, Lab Exercise, Presentation, Test)  
+      - Associated module ID (e.g., M001)  
+      - Total marks of the assessment  
+      - Percentage of marks in the final result  
+      - Status of the assessment (Draft, Published, Result Published)  
+      - Created by which lecturer (e.g., L001)  
+      - Created date (e.g., YYYY-MM-DD)  
+    
+    - Class.txt
+      Stores information about classes, including:  
+      - Class ID (e.g., C001)  
+      - Class name  
+      - Day (Monday, Tuesday, etc.)  
+      - Start time  
+      - End time  
+      - Associated module ID (e.g., M001)  
+      - Admin Staff ID - Class created by (e.g., AS001)  
+      - Created date (e.g., YYYY-MM-DD)  
+    
+    - Enrolment.txt  
+      Manages enrolment details, including:  
+      - Enrolment ID (e.g., E001)  
+      - Student ID (e.g., TP001)  
+      - Class ID (e.g., C001)  
+      - Enrolment date (e.g., YYYY-MM-DD)  
+    
+    - Feedback.txt 
+      Handles feedback data, including:  
+      - Feedback ID (e.g., FB001)  
+      - Lecturer ID (e.g., L001)  
+      - Rating (1-5)  
+      - Feedback content (text)  
+      - Feedback category  
+      - Date of feedback (e.g., YYYY-MM-DD)  
+      - Class ID (e.g., C001)  
+      - Student ID (e.g., TP001)  
+    
+    - Grade.txt
+      Contains grade-related information, including:  
+      - Grade ID (e.g., GR001)  
+      - Minimum mark  
+      - Maximum mark  
+      - Grade (e.g., A, B, C, etc.)  
+      - Description (e.g., Distinction, Pass, etc.)  
+      - GPA  
+    
+    - Module.txt
+      Stores details about modules, including:  
+      - Module ID (e.g., M001)  
+      - Module code  
+      - Module name  
+      - Credit hour  
+      - Lecturer ID (e.g., L001)  
+      - Module status  
+      - Academic Leader ID (e.g., AL001)  
+      - Created date (e.g., YYYY-MM-DD)  
+    
+    - Notifications.txt
+      Manages notification records, including:  
+      - Notification ID (e.g., N001)  
+      - Student ID (e.g., TP001)  
+      - Notification category  
+      - Message content  
+      - Timestamp (e.g., YYYY-MM-DD HH:MM:SS)  
+      - Read status  
+      - Priority  
+    
+    - Result.txt
+      Contains final result data, including:  
+      - Result ID (e.g., R001)  
+      - Student ID (e.g., TP001)  
+      - Assessment ID (e.g., A001)  
+      - Marks obtained  
+      - Overall grade (e.g., A, B, C, etc.)  
+      - Feedback  
+      - Class ID (e.g., C001)  
+      - Lecturer ID (e.g., L001)  
+      - Given date (e.g., YYYY-MM-DD)  
+    
+    - User.txt
+      Stores user information, including:  
+      - User ID (e.g., AS001 for Admin Staff, AL001 for Academic Leader, L001 for Lecturer, TP001 for Student)  
+      - Full name  
+      - Email  
+      - Password  
+      - Gender (F, M)  
+      - Date of birth  
+      - Contact number  
+      - Role (e.g., Admin Staff, Academic Leader, Lecturer, Student)  
+      - Created by (Admin Staff ID)  
+      - Created at (e.g., YYYY-MM-DD)  
+      - Department  
