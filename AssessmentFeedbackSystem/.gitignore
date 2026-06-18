@@ -1,0 +1,7 @@
+/nbproject/private/
+/dist/
+/build/
+/src/assessmentfeedbacksystem/textFile/
+*.txt
+nbproject/private/private.xml
+nbproject/private/private.properties
